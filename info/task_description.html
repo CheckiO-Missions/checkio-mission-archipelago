@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <i>Did you know, that Stockholm is a city built on 14 islands, connected by 57 bridges over the two waters Lake Mälaren and the Baltic Sea.</i>
+</p>
+
+<p style="text-align: justify;">
+    You are given a rectangular map of islands where the number in each island tells how many bridges are connected to it.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago1.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    The object is to connect all islands according to the number of bridges with the following rules:
+    <ul>
+        <li>there are no more than two bridges in the same direction;</li>
+        <li>bridges can only be vertical or horizontal and can't cross islands or other bridges;</li>
+        <li>when completed, all island on a map are interconnected by bridges, enabling passage from any island to another.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Your function must return a sorted ascending tuple of directions with bridges. Each direction is a tuple itself with three integers. The first two are serial numbers of islands (sorted ascending), the third one is number of bridges between these two islands (1 or 2). Islands must be ordered starting from 1, from top-left to bottom-right, row-major.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago2.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> Tuple of tuples of integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+    <strong>Output:</strong> Tuple of tuples of three integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Precondition:</strong>
+    <ul>
+    <li><i>all tests are solvable and have one solution.</i></li>
+    </ul>
+</p>
+<p style="text-align: justify;"><i>
+    This mission is an implementation of the following <a target="_blank" href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.hashi&pcampaignid=web_share">Hashi Google Play app</a>. All tests are the first ones from their kinds (difficulty and dimensions). I strongly recommend you to use the app to understand the mission better and solve it easier as I did while creating it.
+</i></p>
