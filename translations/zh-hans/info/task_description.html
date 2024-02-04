@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <i>您知道吗，斯德哥尔摩是一座建在 14 个岛屿上的城市，有 57 座桥梁连接着梅拉伦湖和波罗的海。</i>
+</p>
+
+<p style="text-align: justify;">
+    给您一张长方形的岛屿地图，每个岛屿上的数字表示有多少座桥与之相连。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago1.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    游戏的目的是按照以下规则，根据桥梁的数量将所有岛屿连接起来：
+    <ul>
+        <li>同一方向上的桥梁不能超过两座；</li>
+        <li>桥梁只能是垂直或水平的，不能跨越岛屿或其他桥梁；</li>
+        <li>完成后，地图上的所有岛屿都由桥梁相互连接，可以从任何一个岛屿通往另一个岛屿。</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    您的函数必须返回一个按升序排序的带有桥梁的方向元组。每个方向都是一个包含三个整数的元组。前两个整数是岛屿的序号（升序排序），第三个整数是这两个岛屿之间的桥梁数（1 或 2）。岛屿必须从 1 开始排序，从左上到右下，行-主。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago2.svg" alt="example" style="max-height: 240px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>整数元组 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>由三个整数组成的元组 <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>例子</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>所有测试均可求解，且只有一个解。</i></li>
+    </ul>
+</p>
+<p style="text-align: justify;"><i>
+    本任务是以下<a target="_blank" href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.hashi&pcampaignid=web_share">Hashi Google Play app</a> 的实现。所有测试都是同类测试中的第一个（难度和维度）。我强烈建议您使用该应用程序来更好地理解任务，并像我在创建任务时那样更轻松地解决它。
+</i></p>
