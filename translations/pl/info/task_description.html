@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <i>Czy wiedzą Państwo, że Sztokholm to miasto zbudowane na 14 wyspach, połączonych 57 mostami nad dwoma wodami - jeziorem Mälaren i Morzem Bałtyckim?</i>
+</p>
+
+<p style="text-align: justify;">
+    Otrzymują Państwo prostokątną mapę wysp, na której liczba na każdej wyspie wskazuje, ile mostów jest z nią połączonych.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago1.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Celem jest połączenie wszystkich wysp zgodnie z liczbą mostów według następujących zasad:
+    <ul>
+        <li>nie ma więcej niż dwóch mostów w tym samym kierunku;</li>
+        <li>mosty mogą być tylko pionowe lub poziome i nie mogą przecinać wysp ani innych mostów;</li>
+        <li>po ukończeniu gry wszystkie wyspy na mapie są połączone mostami, umożliwiającymi przejście z dowolnej wyspy na inną.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Państwa funkcja musi zwrócić posortowaną rosnąco krotkę kierunków z mostami. Każdy kierunek jest krotką zawierającą trzy liczby całkowite. Pierwsze dwie są kolejnymi numerami wysp (posortowanymi rosnąco), trzecia jest liczbą mostów między tymi dwiema wyspami (1 lub 2). Wyspy muszą być uporządkowane począwszy od 1, od lewego górnego do prawego dolnego rogu, rząd-większość.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago2.svg" alt="example" style="max-height: 240px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Krotka krotek liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Krotka krotek trzech liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Warunek wstępny:</strong>
+    <ul>
+    <li><i>wszystkie testy są rozwiązywalne i mają jedno rozwiązanie.</i></li>
+    </ul>
+</p>
+<p style="text-align: justify;"><i>
+    Ta misja jest implementacją następującego <a target="_blank" href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.hashi&pcampaignid=web_share">Hashi Google Play app</a>. Wszystkie testy są pierwszymi w swoim rodzaju (trudność i wymiary). Zdecydowanie zalecam skorzystanie z aplikacji, aby lepiej zrozumieć misję i łatwiej ją rozwiązać, tak jak ja to zrobiłem podczas jej tworzenia.
+</i></p>
