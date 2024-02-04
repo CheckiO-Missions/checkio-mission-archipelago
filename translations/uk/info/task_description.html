@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <i>Чи знаєте ви, що Стокгольм - це місто, побудоване на 14 островах, з'єднаних 57 мостами через дві води - озеро Меларен і Балтійське море.</i>
+</p>
+
+<p style="text-align: justify;">
+    Перед вами прямокутна карта островів, на якій число на кожному острові вказує на кількість мостів, що з'єднують його з іншими островами.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago1.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Ваша задача - з'єднати всі острови відповідно до кількості мостів, дотримуючись наступних правил:
+    <ul>
+        <li>в одному напрямку може бути не більше двох мостів;</li>
+        <li>мости можуть бути лише вертикальними або горизонтальними і не можуть перетинати острови або інші мости;</li>
+        <li>після завершення всі острови на карті з'єднані між собою мостами, що дозволяє переходити з одного острова на інший.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Ваша функція повинна повернути відсортований за зростанням кортеж напрямків з мостами. Кожен напрямок є кортежем з трьома цілими числами. Перші два - порядкові номери островів (відсортовані за зростанням), третє - кількість мостів між цими двома островами (1 або 2). Острови повинні бути впорядковані, починаючи з 1, з лівого верхнього до правого нижнього, за зростанням.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago2.svg" alt="example" style="max-height: 240px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Кортеж кортежів цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Кортеж кортежів з трьох цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Пояснення:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Умова:</strong>
+    <ul>
+    <li><i>усі тести розв'язні і мають один розв'язок.</i></li>
+    </ul>
+</p>
+<p style="text-align: justify;"><i>
+    Ця місія є реалізацією наступної <a target="_blank" href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.hashi&pcampaignid=web_share">Hashi Google Play app</a>. Всі тести є першими у своєму роді (складність та розмірність). Я настійно рекомендую вам використовувати додаток, щоб краще зрозуміти місію і легше її розв'язати, як це зробив я під час її створення.
+</i></p>
