@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <i>Saviez-vous que Stockholm est une ville construite sur 14 îles, reliées par 57 ponts qui enjambent le lac Mälaren et la mer Baltique?</i>
+</p>
+
+<p style="text-align: justify;">
+    Vous disposez d'une carte rectangulaire des îles, sur laquelle le numéro de chaque île indique le nombre de ponts qui y sont reliés.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago1.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Le but est de relier toutes les îles en fonction du nombre de ponts, selon les règles suivantes:
+    <ul>
+        <li>il n'y a pas plus de deux ponts dans la même direction;</li>
+        <li>les ponts ne peuvent être que verticaux ou horizontaux et ne peuvent pas traverser des îles ou d'autres ponts;</li>
+        <li>une fois terminé, toutes les îles d'une carte sont reliées par des ponts, ce qui permet de passer d'une île à l'autre.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Votre fonction doit renvoyer un n-uplet trié par ordre croissant de directions avec des ponts. Chaque direction est un tuple contenant lui-même trois entiers. Les deux premiers sont les numéros de série des îles (triés par ordre croissant), le troisième est le nombre de ponts entre ces deux îles (1 ou 2). Les îles doivent être ordonnées à partir de 1, de haut en bas à gauche et de bas en haut à droite, ligne-majeur.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago2.svg" alt="example" style="max-height: 240px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Tuple de tuples d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Tuple de tuples de trois entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Condition préalable:</strong>
+    <ul>
+    <li><i>tous les tests sont résolubles et ont une solution.</i></li>
+    </ul>
+</p>
+<p style="text-align: justify;"><i>
+    Cette mission est une implémentation de la condition suivante: <a target="_blank" href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.hashi&pcampaignid=web_share">Hashi Google Play app</a>. Tous les tests sont les premiers de leur catégorie (difficulté et dimensions). Je vous recommande vivement d'utiliser l'application pour mieux comprendre la mission et la résoudre plus facilement comme je l'ai fait en la créant.
+</i></p>
