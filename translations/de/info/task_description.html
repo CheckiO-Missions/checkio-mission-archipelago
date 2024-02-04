@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <i>Wussten Sie, dass Stockholm eine Stadt ist, die auf 14 Inseln gebaut wurde, die durch 57 Brücken über den Mälarsee und die Ostsee verbunden sind.</i>
+</p>
+
+<p style="text-align: justify;">
+    Sie erhalten eine rechteckige Karte mit Inseln, wobei die Zahl auf jeder Insel angibt, wie viele Brücken mit ihr verbunden sind.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago1.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Das Ziel ist es, alle Inseln entsprechend der Anzahl der Brücken nach den folgenden Regeln zu verbinden:
+    <ul>
+        <li>es gibt nicht mehr als zwei Brücken in dieselbe Richtung;</li>
+        <li>brücken können nur vertikal oder horizontal sein und dürfen keine Inseln oder andere Brücken kreuzen;</li>
+        <li>wenn das Spiel abgeschlossen ist, sind alle Inseln auf der Karte durch Brücken miteinander verbunden, so dass man von jeder Insel zu einer anderen gelangen kann.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Ihre Funktion muss ein sortiertes aufsteigendes Tupel von Richtungen mit Brücken zurückgeben. Jede Richtung ist selbst ein Tupel mit drei ganzen Zahlen. Die ersten beiden sind laufende Nummern von Inseln (aufsteigend sortiert), die dritte ist die Anzahl der Brücken zwischen diesen beiden Inseln (1 oder 2). Die Inseln müssen von 1 beginnend, von links oben nach rechts unten, zeilenweise sortiert werden.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}archipelago2.svg" alt="example" style="max-height: 240px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Tupel von Tupeln von ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Tupel von Tupeln von drei ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li><i>alle Tests sind lösbar und haben eine Lösung.</i></li>
+    </ul>
+</p>
+<p style="text-align: justify;"><i>
+    Diese Mission ist eine Umsetzung der folgenden <a target="_blank" href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.hashi&pcampaignid=web_share">Hashi Google Play app</a>. Alle Tests sind die ersten ihrer Art (Schwierigkeit und Dimensionen). Ich empfehle Ihnen dringend, die App zu verwenden, um die Mission besser zu verstehen und sie einfacher zu lösen, so wie ich es bei der Erstellung getan habe.
+</i></p>
