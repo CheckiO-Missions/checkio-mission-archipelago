@@ -23,7 +23,7 @@ console.log(JSON.stringify(archipelago([
 {% block tests %}
 {% for t in tests %}
 assert.strictEqual({% block call %}archipelago({{t.input|j_args}})
-{% endblock %}, {% block result %}{{t.answer|j}}{% endblock %});{% endfor %}
+{% endblock %}, {% block result %}{{t.answer|j}} // {{t.explanation}}{% endblock %});{% endfor %}
 {% endblock %}
 
 {% block final %}
